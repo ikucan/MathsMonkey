@@ -9,6 +9,6 @@ setup(name='MathMonkey',
       description='A repetitive maths practice system.',
       author='Iztok Kucan',
       author_email='iztok.kucan@gmail.com',
-      url='https://github.com/ikucan/MathMonkey',
-      packages=['l0'],
+      url='https://github.com/ikucan/MathsDonkey',
+      packages=['mathsdonkey'],
      )
