@@ -10,4 +10,4 @@ class addition(common.pdf_gen):
         print("class created")
         
     def print(self, msg):
-        print("MESSAGE:>> ", msg)    
+        print("MESSAGE:>> ", msg)
