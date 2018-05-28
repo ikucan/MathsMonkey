@@ -1,14 +1,19 @@
 #!/usr/bin/env python
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 requires=['numpy', 'sympy', 'pylatex']
 
-setup(name='MathMonkey',
-      version='0.1',
-      description='A repetitive maths practice system.',
-      author='Iztok Kucan',
-      author_email='iztok.kucan@gmail.com',
-      url='https://github.com/ikucan/MathsDonkey',
-      packages=['mathsdonkey'],
+NME = 'MathsMonkey'
+VER = '0.1'
+EML = 'iztok.kucan@gmail.com'
+WEB = 'https://github.com/ikucan/MathsMonkey'
+
+setup(name         = NME,
+      version      = VER,
+      description  = 'A repetitive maths practice system.',
+      author       = 'Iztok Kucan',
+      author_email = EML,
+      url          = WEB,
+      packages     = find_packages()
      )

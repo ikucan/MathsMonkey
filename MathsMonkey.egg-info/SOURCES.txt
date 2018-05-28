@@ -1,0 +1,6 @@
+README.md
+MathsMonkey.egg-info/PKG-INFO
+MathsMonkey.egg-info/SOURCES.txt
+MathsMonkey.egg-info/dependency_links.txt
+MathsMonkey.egg-info/top_level.txt
+mathsmonkey/__init__.py
