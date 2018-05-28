@@ -3,4 +3,9 @@ MathsMonkey.egg-info/PKG-INFO
 MathsMonkey.egg-info/SOURCES.txt
 MathsMonkey.egg-info/dependency_links.txt
 MathsMonkey.egg-info/top_level.txt
+mathsmonkey/Addition.py
 mathsmonkey/__init__.py
+mathsmonkey/common.py
+mathsmonkey/settings.py
+mathsmonkey/l0/__init__.py
+mathsmonkey/l0/column_addition.py
