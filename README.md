@@ -1,5 +1,4 @@
-
-### MathDonkey
+### Maths Monkey
 This is a maths training system indended primarily for children. It enables parents to print existing generate new example problem and answer sheets for children. If you prefer not to pay for a commercial variety, this may be something of interest.
 
 We want to provide:
