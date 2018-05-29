@@ -4,7 +4,7 @@ from pylatex.basic import SmallText
 from pylatex.position import FlushRight
 from pylatex.utils import italic, bold
 
-class pdf_gen:
+class pdf_base:
     """
     base class for all pdf generating classes
     """
@@ -12,7 +12,11 @@ class pdf_gen:
     cream_clr_def = "0.92 0.92 0.8"
     pge_geom = {"tmargin" : "1cm",  "bmargin" : "1cm",  "lmargin" : "1cm",  "rmargin" : "1cm" }
 
-    def __init__(self, ttl):
+    def __init__(self):
+        a=1
+        
+    def start(self, ttl):
+        print('ttl:>> ', ttl)
         q_doc = Document(geometry_options = self.pge_geom, lmodern = True)
         a_doc = Document(geometry_options = self.pge_geom, lmodern = True)
     

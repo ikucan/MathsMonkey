@@ -8,11 +8,13 @@ NME = 'MathsMonkey'
 VER = '0.1'
 EML = 'iztok.kucan@gmail.com'
 WEB = 'https://github.com/ikucan/MathsMonkey'
+AUT = 'iztok kucan'
+DSC = 'A maths practice system.'
 
 setup(name         = NME,
       version      = VER,
-      description  = 'A repetitive maths practice system.',
-      author       = 'Iztok Kucan',
+      description  = DSC,
+      author       = AUT,
       author_email = EML,
       url          = WEB,
       packages     = find_packages()
