@@ -15,8 +15,7 @@ class pdf_base:
     def __init__(self):
         a=1
         
-    def start(self, ttl):
-        print('ttl:>> ', ttl)
+    def start(self, ttl, fnt_sz = [16, 18]):
         q_doc = Document(geometry_options = self.pge_geom, lmodern = True)
         a_doc = Document(geometry_options = self.pge_geom, lmodern = True)
     
@@ -27,7 +26,7 @@ class pdf_base:
             a_doc.append('Answers to problem sheet')
 
         q_doc.add_color(name="cream", model="rgb", description = self.cream_clr_def)
-        q_doc.append(Command('fontsize', arguments = ['16', '18']))
+        q_doc.append(Command('fontsize', arguments = fnt_sz))
         q_doc.append(Command('fontfamily', arguments = ['pcr']))
         q_doc.append(Command('selectfont'))
         q_doc.append(FlushRight())
