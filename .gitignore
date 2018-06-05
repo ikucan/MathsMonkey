@@ -12,3 +12,8 @@ tramp
 # python
 __pycache__
 *.egg-info
+
+
+*.pdf
+*.tex
+*.log

@@ -1,7 +1,7 @@
 from pylatex import Document, Section, Subsection, Tabular, MultiColumn, LongTabu, Command
 from pylatex import Math
 from pylatex.basic import SmallText
-from pylatex.position import FlushRight
+from pylatex.position import FlushRight, FlushLeft
 from pylatex.utils import italic, bold
 
 class pdf_base:
@@ -27,9 +27,9 @@ class pdf_base:
 
         q_doc.add_color(name="cream", model="rgb", description = self.cream_clr_def)
         q_doc.append(Command('fontsize', arguments = fnt_sz))
-        q_doc.append(Command('fontfamily', arguments = ['pcr']))
+        #q_doc.append(Command('fontfamily', arguments = ['pcr']))
         q_doc.append(Command('selectfont'))
-        q_doc.append(FlushRight())
+        q_doc.append(FlushLeft())
 
         a_doc.add_color(name = "cream", model = "rgb", description = self.cream_clr_def)
 
