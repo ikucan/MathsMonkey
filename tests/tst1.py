@@ -11,7 +11,7 @@ import abc
 import functools
 
 
-class addition(smpl_bse):
+class foo(smpl_bse):
     def __init__(self, out_dir, fnm):
         smpl_bse.__init__(self, out_dir, fnm)
 
@@ -30,3 +30,6 @@ class addition(smpl_bse):
         a_idx = bold(str(idx) + ":")
         a_tab.add_row((a_idx, sum(nums)))
         return (q_tab, a_tab)
+
+sb = foo('.', 'xxxxx')
+sb.gen(5, 2, 1, 100, 3)
