@@ -16,15 +16,14 @@ class smpl_bse(pdf_base):
     
     @abc.abstractmethod
     def gen_smpl(self, idx, n_digits, n_nums, var_digits=0):
-        """xxxx"""
-        return (1,2)
-    
+        """abstract generator method to prvide a simple question and answer tuple for a simple problem
+        """
+
     def __init__(self, output_directory, file_name):
         pdf_base.__init__(self)
         self.f_nm = file_name
         self.out_dir = output_directory
 
-    #def gen(self, n_ex, n_digits, var_digits, n_nums, n_cols, out_file=None):
     def gen(self, n_nums, n_digits, var_digits, n_ex, n_cols, out_file=None):
         print('generating.... ', n_ex, ',', n_nums, ',', n_digits, ',', var_digits, ',', n_cols)
         ttl = 'Simple addition - ' + str(n_nums) + ' numbers, ' + str(n_digits)+ ' digits'
