@@ -1,6 +1,6 @@
 from mathsmonkey.smpl.smpl_subtraction import subtraction
 
-s = subtraction('.', 'simple_subtraction')
+s = subtraction('../../pdfs/smpl/', 'simple_subtraction')
 
 for n_nums in range(2, 6):
     for n_dgts in range (1, 4):

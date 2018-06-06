@@ -1,6 +1,6 @@
 from mathsmonkey.smpl.smpl_addition import addition
 
-a = addition('.', 'simple_addition')
+a = addition('../../pdfs/smpl/', 'simple_addition')
 
 for n_nums in range(2, 6):
     for n_dgts in range (1, 4):
