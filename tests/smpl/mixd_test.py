@@ -15,5 +15,5 @@ if False:
                     n_cols += 1
                 a.gen(n_nums, n_dgts, dgt_var, 100, n_cols)
 
-a.gen(5, 3, 2, 100, 2)
+a.gen(10, 3, 2, 100, 1)
 
