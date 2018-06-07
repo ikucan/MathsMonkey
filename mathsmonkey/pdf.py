@@ -10,7 +10,7 @@ class pdf_base:
     """
 
     cream_clr_def = "0.92 0.92 0.8"
-    pge_geom = {"tmargin" : "1cm",  "bmargin" : "1cm",  "lmargin" : "1cm",  "rmargin" : "1cm" }
+    pge_geom = {"tmargin" : "1cm",  "bmargin" : "1.5cm",  "lmargin" : "1cm",  "rmargin" : "1cm" }
 
     def __init__(self):
         a=1
@@ -19,17 +19,17 @@ class pdf_base:
         q_doc = Document(geometry_options = self.pge_geom, lmodern = True)
         a_doc = Document(geometry_options = self.pge_geom, lmodern = True)
     
-        with q_doc.create(Section("Questions: " + ttl, numbering = False)):
-            q_doc.append('Solve the following questions!')
-            
-        with a_doc.create(Section("Answers: " + ttl, numbering = False)):
-            a_doc.append('Answers to problem sheet')
-
         q_doc.add_color(name="cream", model="rgb", description = self.cream_clr_def)
         q_doc.append(Command('fontsize', arguments = fnt_sz))
         #q_doc.append(Command('fontfamily', arguments = ['pcr']))
         q_doc.append(Command('selectfont'))
         q_doc.append(FlushLeft())
+        
+        with q_doc.create(Section("Questions: " + ttl, numbering = False)):
+            q_doc.append('Solve questions below:')
+            
+        with a_doc.create(Section("Answers: " + ttl, numbering = False)):
+            a_doc.append('Answers to problem sheet')
 
         a_doc.add_color(name = "cream", model = "rgb", description = self.cream_clr_def)
 

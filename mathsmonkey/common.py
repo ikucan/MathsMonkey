@@ -4,7 +4,7 @@ from random import randint
 from math import copysign
 
 def gen_rnd(n_digits, var_digits = 0):
-    """ generate a random number up to n-digits long with some variance in the number of digits
+    """ generate a positive random number n-digits long with specified variance in the number of digits
     """
     assert(n_digits >= 1)
     assert(var_digits < n_digits)
