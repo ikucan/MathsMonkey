@@ -1,10 +1,16 @@
 from mathsmonkey.smpl.smpl_mxd_add_sub import mix_add_sub
 from mathsmonkey.smpl.smpl_addition import addition
+from mathsmonkey.smpl.smpl_subtraction import subtraction
 import random
 
+#
+# for the same seed value (e.g. 0) an identical set of tests can be generated
+# change this value if you want to generate a 'new' set of tests
+#
 random.seed(0)
 
 all_tests = [ addition('../../pdfs/smpl/', 'simple_addition'),
+              subtraction('../../pdfs/smpl/', 'simple_subtracion'),
               mix_add_sub('../../pdfs/smpl/', 'simple_addition_subtraction')]
 
 for n_nums in range(2, 6):

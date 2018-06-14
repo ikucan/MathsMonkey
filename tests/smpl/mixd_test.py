@@ -6,7 +6,6 @@ random.seed(0)
 test = mix_add_sub('../../pdfs/smpl/', 'simple_addition_subtraction')
 
 #test.gen(4, 3, 1, 100, 3)
-
 #test.foo()
 
 for n_nums in range(2, 6):
