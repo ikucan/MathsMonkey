@@ -1,4 +1,4 @@
-import abc
+#import abc
 
 from mathsmonkey.smpl.smpl_bse import smpl_bse
 from mathsmonkey.common import gen_rnd
@@ -10,7 +10,7 @@ import functools
 
 class subtraction(smpl_bse):
     def __init__(self, out_dir, fnm):
-        smpl_bse.__init__(self, out_dir, fnm)
+        smpl_bse.__init__(self, out_dir, fnm, "Simple subtraction")
 
     def gen_smpl(self, idx, n_digits, n_nums, var_digits=0):
         """ generate an example of a simple addition 

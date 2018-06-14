@@ -11,7 +11,7 @@ import functools
 
 class addition(smpl_bse):
     def __init__(self, out_dir, fnm):
-        smpl_bse.__init__(self, out_dir, fnm)
+        smpl_bse.__init__(self, out_dir, fnm, "Simple addition")
 
     def gen_smpl(self, idx, n_digits, n_nums, var_digits=0):
         """ generate an example of a simple addition 
